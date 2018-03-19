@@ -1,0 +1,440 @@
+{% block header %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Mbarrikallah-immo</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="{{asset('width=device-width, initial-scale=1.0')}}"/>
+
+ 	<link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.css')}}" />
+ 
+  	<link rel="stylesheet" href="{{asset('assets/slitslider/css/style.css')}}" />
+  
+<link rel="stylesheet" href="{{asset('assets/slitslider/css/custom.css')}}" />
+<link rel="stylesheet" href="{{asset('assets/style.css')}}"/>
+  <script src="{{asset('http://code.jquery.com/jquery-1.9.1.min.js')}}"></script>
+	<script src="{{asset('assets/bootstrap/js/bootstrap.js')}}"></script>
+  <script src="{{asset('assets/script.js')}}"></script>
+
+
+
+<!-- Owl stylesheet -->
+<link rel="stylesheet" href="{{asset('assets/owl-carousel/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{asset('assets/owl-carousel/owl.theme.css')}}">
+<script src="{{asset('assets/owl-carousel/owl.carousel.js')}}"></script>
+<!-- Owl stylesheet -->
+
+
+<!-- slitslider -->
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/slitslider/css/style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/slitslider/css/custom.css')}}" />
+    <script type="text/javascript" src="{{asset('assets/slitslider/js/modernizr.custom.79639.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/slitslider/js/jquery.ba-cond.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/slitslider/js/jquery.slitslider.js')}}"></script>
+<!-- slitslider -->
+
+</head>
+
+<body>
+
+
+<!-- Header Starts -->
+<div class="navbar-wrapper">
+
+        <div class="navbar-inverse" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+
+
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+            </div>
+
+
+            <!-- Nav Starts -->
+            <div class="navbar-collapse  collapse">
+              <ul class="nav navbar-nav navbar-right">
+               <li class="active"><a href="{{path('accueil')}}">Acuueil</a></li>
+                <li><a href="about.php">A propos</a></li>
+                <li><a href="agents.php">Agents</a></li>         
+                <li><a href="blog.php">Blog</a></li>
+                <li><a href="contact.php">Contact</a></li>
+              </ul>
+            </div>
+            <!-- #Nav Ends -->
+
+          </div>
+        </div>
+
+    </div>
+<!-- #Header Starts -->
+
+
+
+
+
+<div class="container">
+
+<!-- Header Starts -->
+<div class="header">
+<a href="index.php"><img src="{{asset('images/imageedit__5471324689.png')}}" alt="Realestate"></a>
+
+              <ul class="pull-right">
+                <li><a href="buysalerent.php">Piscine</a></li>
+                <li><a href="buysalerent.php">Jacousie</a></li> 
+               <li><a href="buysalerent.php">Salle de Conference</a></li>         
+        
+              </ul>
+</div>
+<!-- #Header Starts -->
+</div>
+{% endblock %}
+
+
+{% block content %}
+<div class="">
+
+    
+
+            <div id="slider" class="sl-slider-wrapper">
+
+        <div class="sl-slider">
+        
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-1"></div>
+             
+              <h2><a href="#">2 Chambre et 1 Aire de salle à manger en location</a></h2>
+              <blockquote>              
+              <p class="location"><span class="glyphicon glyphicon-map-marker"></span>Sud Saint-Louis, Senegal</p>
+
+<p> Jusqu'à ce qu'il étende le cercle de sa compassion à tous les êtres vivants, l'homme ne trouvera pas lui-même la paix. </p>      <cite>200.000frcfa</cite>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-2"></div>
+              <h2><a href="#">
+2 chambres à coucher et 1 appartement salle à manger en location</a></h2>
+              <blockquote>              
+              <p class="location"><span class="glyphicon glyphicon-map-marker"></span>Nord Saint-Louis, Senegal</p>
+<p> Jusqu'à ce qu'il étende le cercle de sa compassion à tous les êtres vivants, l'homme ne trouvera pas lui-même la paix. </p>             
+              <cite>200.000frcfa</cite>
+              </blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="3" data-slice2-rotation="3" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-3"></div>
+              <h2><a href="#">2 Chambre et 1 Aire de salle à manger en location</a></h2>
+              <blockquote>              
+              <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Goxumbacc Saint-Louis, Senegal</p>
+<p> Jusqu'à ce qu'il étende le cercle de sa compassion à tous les êtres vivants, l'homme ne trouvera pas lui-même la paix. </p>             
+              <cite>200.000frcfa</cite>
+              </blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-4"></div>
+              <h2><a href="#">2 Chambre et 1 Aire de salle à manger en location</a></h2>
+              <blockquote>              
+              <p class="location"><span class="glyphicon glyphicon-map-marker"></span> Guet-Ndar Saint-Louis, Senegal</p>
+<p> Jusqu'à ce qu'il étende le cercle de sa compassion à tous les êtres vivants, l'homme ne trouvera pas lui-même la paix. </p>              
+              <cite>200.000frcfa</cite>
+              </blockquote>
+            </div>
+          </div>
+          
+          <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
+            <div class="sl-slide-inner">
+              <div class="bg-img bg-img-5"></div>
+              <h2><a href="#">2 Chambre et 1 Aire de salle à manger en location</a></h2>
+              <blockquote>              
+              <p class="location"><span class="glyphicon glyphicon-map-marker"></span> santiaba Saint-louis, Senegal</p>
+<p> Jusqu'à ce qu'il étende le cercle de sa compassion à tous les êtres vivants, l'homme ne trouvera pas lui-même la paix. </p>              
+              <cite>200.000frcfa</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div><!-- /sl-slider -->
+
+
+
+        <nav id="nav-dots" class="nav-dots">
+          <span class="nav-dot-current"></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </nav>
+
+      </div><!-- /slider-wrapper -->
+</div>
+<div class="banner-search">
+  <div class="container"> 
+    <!-- banner -->
+    <h3>Recherchez en fonction de vos critaires</h3>
+    <div class="searchbar">
+      <div class="row">
+        <div class="col-lg-6 col-sm-6">
+          <input type="text" class="form-control" placeholder="Search of Properties">
+          <div class="row">
+          {{ form_start(form) }}
+           <div class="col-lg-3 col-sm-3 ">
+            {{ form_label(form.types) }}{{ form_widget(form.types,{'attr': {'class': 'task_field'}}) }}
+            </div>
+            <div class="col-lg-3 col-sm-3 ">
+            {{ form_label(form.localites) }}{{ form_widget(form.localites,{'attr': {'class': 'task_field'}}) }}
+            </div>
+            
+            <div class="col-lg-3 col-sm-4">
+           {{ form_label(form.prix) }}{{ form_widget(form.prix) }}
+              </div>
+              <div class="col-lg-3 col-sm-4">
+              btn btn-success
+         {{ form_widget(form.chercher,{'attr': {'class': 'btn btn-success'}}) }}
+
+              </div>
+               {{ form_end(form) }}
+          </div>
+          
+          
+        </div>
+        <div class="col-lg-5 col-lg-offset-1 col-sm-6 ">
+          <p>
+Inscrivez-vous maintenant et soyez mis à jour avec toutes les offres immobilières.</p>
+          <button class="btn btn-info"   data-toggle="modal" data-target="#loginpop">Login</button>        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- banner -->
+<div class="container">
+  <div class="properties-listing spacer"> <a href="buysalerent.php" class="pull-right viewall">View All Listing</a>
+   
+    {% block catalogue %}
+{% if x is not defined %}
+       <h2> Propriétés en vedette</h2>
+   
+    <div id="owl-example" class="owl-carousel">
+    {% for bien in biens %}
+      <div class="properties">
+       {% set c = 0 %} 
+       {% for i in bien.image %}
+         {% if c == 0 %}
+        <div class="image-holder"><img src="{{asset('images/properties/'~i.image)}}" class="img-responsive" alt="properties" style=" height:150px;"/>
+          
+            {% set c = c+ 1 %} 
+         {% endif %}
+  {% endfor %} 
+  <div class="status sold">Sold</div>
+        </div>
+        <h4><a href="property-detail.php">{{bien.nom}}</a></h4>
+        <p class="price">Prix: {{bien.prix}}frcfa</p>
+        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+        <a class="btn btn-primary" href="{{path('detail',{'id':bien.id})}}">Voir Details</a>
+      </div>
+     
+     {% endfor %} 
+        {% endif %}
+     {% if x is defined %}
+      <h2> Propriétés en vedette</h2>
+   
+    <div id="owl-example" class="owl-carousel">
+    {% for bien in bien %}
+      <div class="properties">
+       {% set c = 0 %} 
+       {% for i in bien.image %}
+         {% if c == 0 %}
+        <div class="image-holder"><img src="{{asset('images/properties/'~i.image)}}" class="img-responsive" alt="properties"/>
+          
+            {% set c = c+ 1 %} 
+         {% endif %}
+  {% endfor %} 
+  <div class="status sold">Sold</div>
+        </div>
+        <h4><a href="property-detail.php">{{bien.nom}}</a></h4>
+        <p class="price">Prix: {{bien.prix}}frcfa</p>
+        <div class="listing-detail"><span data-toggle="tooltip" data-placement="bottom" data-original-title="Bed Room">5</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Living Room">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Parking">2</span> <span data-toggle="tooltip" data-placement="bottom" data-original-title="Kitchen">1</span> </div>
+        <a class="btn btn-primary" href="{{path('detail',{'id':bien.id})}}">Voir Details</a>
+      </div>
+     
+     {% endfor %} 
+
+     
+     {% endif %}
+    {% endblock  %}
+  </div>
+  <div class="spacer">
+    <div class="row">
+      <div class="col-lg-6 col-sm-9 recent-view">
+        <h3>A propos de nous </h3>
+        <p>Mbarrikallah immo est ....<br><a href="about.php">Lire plus</a></p>
+      
+      </div>
+      <div class="col-lg-5 col-lg-offset-1 col-sm-3 recommended">
+        <h3>Propriete recommande</h3>
+        <div id="myCarousel" class="carousel slide">
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="3" class=""></li>
+          </ol>
+          <!-- Carousel items -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <div class="row">
+                <div class="col-lg-4"><img src="{{asset('images/properties/1.jpg')}}" class="img-responsive" alt="properties"/></div>
+                <div class="col-lg-8">
+                  <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
+                  <p class="price">$300,000</p>
+                  <a href="property-detail.php" class="more">Plus de details</a> </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-4"><img src="{{asset('images/properties/2.jpg')}}" class="img-responsive" alt="properties"/></div>
+                <div class="col-lg-8">
+                  <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
+                  <p class="price">$300,000</p>
+                  <a href="property-detail.php" class="more">Plus de details</a> </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-4"><img src="{{asset('images/properties/3.jpg')}}" class="img-responsive" alt="properties"/></div>
+                <div class="col-lg-8">
+                  <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
+                  <p class="price">$300,000</p>
+                  <a href="property-detail.php" class="more">Plus de details</a> </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-lg-4"><img src="{{asset('images/properties/4.jpg')}}" class="img-responsive" alt="properties"/></div>
+                <div class="col-lg-8">
+                  <h5><a href="property-detail.php">Integer sed porta quam</a></h5>
+                  <p class="price">$300,000</p>
+                  <a href="property-detail.php" class="more">Plus de details</a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+{% block footer %}
+
+<div class="footer">
+
+<div class="container">
+
+
+
+<div class="row">
+            <div class="col-lg-3 col-sm-3">
+                   <h4>Informations</h4>
+                   <ul class="row">
+                <li class="col-lg-12 col-sm-12 col-xs-3"><a href="about.php">A propos</a></li>
+                <li class="col-lg-12 col-sm-12 col-xs-3"><a href="agents.php">Agents</a></li>         
+                <li class="col-lg-12 col-sm-12 col-xs-3"><a href="blog.php">Blog</a></li>
+                <li class="col-lg-12 col-sm-12 col-xs-3"><a href="contact.php">Contact</a></li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-3 col-sm-3">
+                    <h4>Notifications</h4>
+                    <p>
+Recevez des notifications sur les dernières propriétés sur notre place de marché.</p>
+                    <form class="form-inline" role="form">
+                            <input type="text" placeholder="Enter Your email address" class="form-control">
+                                <button class="btn btn-success" type="button">Notify Me!</button></form>
+            </div>
+            
+            <div class="col-lg-3 col-sm-3">
+                    <h4>Suivez nous</h4>
+                    <a href="#"><img src="{{asset('images/facebook.png')}}" alt="facebook"></a>
+                    <a href="#"><img src="{{asset('images/twitter.png')}}" alt="twitter"></a>
+                    <a href="#"><img src="{{asset('images/linkedin.png')}}" alt="linkedin"></a>
+                    <a href="#"><img src="{{asset('images/instagram.png')}}" alt="instagram"></a>
+            </div>
+
+             <div class="col-lg-3 col-sm-3">
+                    <h4>Contacter nous</h4>
+                    <p><b>Mbarrikallah-immo.</b><br>
+<span class="glyphicon glyphicon-map-marker"></span> Goxumbacc Saint-louis, Senegal <br>
+<span class="glyphicon glyphicon-envelope"></span> kheuchebambiste@gmail.com<br>
+<span class="glyphicon glyphicon-earphone"></span> (221) 774262278</p>
+            </div>
+        </div>
+<p class="copyright">Copyright 2018. Tout droit reserve.	</p>
+
+
+</div></div>
+
+
+
+
+<!-- Modal -->
+<div id="loginpop" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="row">
+        <div class="col-sm-6 login">
+        <h4>Login</h4>
+          <form class="" role="form">
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputEmail2">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label class="sr-only" for="exampleInputPassword2">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+        </div>
+        <button type="submit" class="btn btn-success">Sign in</button>
+      </form>          
+        </div>
+        <div class="col-sm-6">
+          <h4>New User Sign Up</h4>
+          <p>Join today and get updated with all the properties deal happening around.</p>
+          <button type="submit" class="btn btn-info"  onclick="window.location.href='register.php'">Join Now</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.modal -->
+{% block javascript %}
+ <script src="{{asset('assets/script.js')}}"></script>
+  <script src="{{asset('assets/slitslider/js/jquery.slitslider.js')}}"></script>
+  <script src="{{asset('assets/slitslider/js/jquery.ba-cond.min.js')}}"></script>
+  <script src="{{asset('assets/slitslider/js/modernizr.custom.79639.js')}}"></script>
+
+{% endblock %}
+
+
+</body>
+</html>
+
+
+
+{% endblock %}

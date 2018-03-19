@@ -1,0 +1,48 @@
+{% extends "@KEURGUIimmo/layoutl.html.twig" %}
+
+  {% block content %}
+ <table border=1 class="table" >
+    <tr>
+<th>nom du client</th>
+<th>adresse client</th>
+<th>nom du bien</th>
+<th>adresse bien</th>
+<th>type de bien</th>
+<th>image</th>
+<th>action</th>
+
+</tr>
+<tr>
+{% block style %}
+<style>
+img{
+  width:100px;
+}
+</style>
+{% endblock %}
+ 
+{% for res in res %}
+       <tr>
+  
+     
+
+  <td scope="col" class="table-info">{{res.client.nomComplet}}</td>
+          <td scope="col" class="table-info">{{res.client.adresse}}</td>
+
+    <td scope="col" class="table-info">{{res.bien.nom}}</td>
+        <td scope="col" class="table-info">{{res.bien.localite}}</td>
+         <td scope="col" class="table-info">{{res.bien.type}}</td>
+          <td scope="col" class="table-info"><img src="{{asset('images/properties/'~res.bien.image[0])}}" class="img-responsive" alt="properties"/></td>
+
+
+        <td scope="col" class="table-info"><a href="{{path('det',{'idb':res.bien.id,'idc':res.client.id})}}">details</a>
+</td>
+
+     </tr> 
+      {% else %}
+      aucun utilisateur de ce login trouver
+{% endfor %}
+  </tr>
+</table>
+
+{% endblock %}

@@ -1,0 +1,146 @@
+
+reserver:
+    path:     /affiche/{id}/{idb}
+    defaults: { _controller: KEURGUIimmoBundle:front:res }
+rese:
+    path:     /res/
+    defaults: { _controller: KEURGUIimmoBundle:front:affRes }
+log:
+    path:     /log/
+    defaults: { _controller: KEURGUIimmoBundle:front:connect }
+contrat:
+    path:     /contrat/{idb}/{idc}
+    defaults: { _controller: KEURGUIimmoBundle:front:validRes }
+reserve:
+    path:     /affiche/
+    defaults: { _controller: KEURGUIimmoBundle:front:connect } 
+accueil:
+    path:     /accueil/
+    defaults: { _controller: KEURGUIimmoBundle:front:accueil }    
+detail:
+    path:     /detail/
+    defaults: { _controller: KEURGUIimmoBundle:front:detail } 
+reservers:
+    path:     /reserver/
+    defaults: { _controller: KEURGUIimmoBundle:front:reserver }  
+app_bundle_route:
+   path:     /ajax_request
+   defaults: { _controller: KEURGUIimmoBundle:front:index }
+reserv:
+    path:     /showReservation/
+    defaults: { _controller: KEURGUIimmoBundle:front:showReservation }                                           
+                     
+                 
+detailReservation:
+    path:     /detailsReservatin/{id}
+    defaults: { _controller: KEURGUIimmoBundle:front:detailsReservation } 
+pdf:
+    path:     /pdf/
+    defaults: { _controller: KEURGUIimmoBundle:front:contratpdf } 
+admin:
+    path:     /admins/
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:admin } 
+tab:
+    path:     /lo/
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:load } 
+formBien:
+    path:     /addbien/
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:Bien } 
+    methods: [POST,GET]
+formLocalite:
+    path:     /addlocalite/
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:Localite }  
+formType:
+    path:     /addtype/
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:Type }  
+    
+add:
+    path:     /add/
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:add }                           
+    requirements:
+det:
+    path:     /det/{idb}/{idc}
+    defaults: { _controller: KEURGUIimmoBundle:front:con }   
+gerant:
+    path:     /gerant
+    defaults: { _controller: KEURGUIimmoBundle:front:gerant }    
+ajout:
+    path:     /ajout
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:ajout } 
+bientable:
+    path:     /tablebien
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:Bien }   
+validation:
+    path:     /validation
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:validation }  
+saveContrat:
+    path:     /saveContrat
+    defaults: { _controller: KEURGUIimmoBundle:front:saveContrat }   
+selectLocalite:
+    path:     /selectL
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:selectLocalite} 
+selectType:
+    path:     /selectT
+    defaults: { _controller: KEURGUIimmoBundle:Reservation:selectType} 
+Proprietaireype:
+    path:     /prop
+    defaults: { _controller: KEURGUIimmoBundle:Proprietaire:AddProprietaire}   
+addP:
+    path:     /addP/
+    defaults: { _controller: KEURGUIimmoBundle:Proprietaire:addP }
+validArchive:
+    path:     /validArchive/
+    defaults: { _controller: KEURGUIimmoBundle:Proprietaire:validArchive }   
+valider:
+    path:     /activer/
+    defaults: { _controller: KEURGUIimmoBundle:Proprietaire:valider }  
+archiver:
+    path:     /archiver/
+    defaults: { _controller: KEURGUIimmoBundle:Proprietaire:archiver }    
+
+bail:
+    path:     /bail/
+    defaults: { _controller: KEURGUIimmoBundle:Proprietaire:contratBail } 
+all:
+    path:     /all/
+    defaults: { _controller: KEURGUIimmoBundle:API:List }  
+update:
+    path:     /update/{id}
+    defaults: { _controller: KEURGUIimmoBundle:API:update } 
+delete:
+    path:     /delete/{id}
+    defaults: { _controller: KEURGUIimmoBundle:API:delete } 
+addl:
+    path:     /addl/
+    defaults: { _controller: KEURGUIimmoBundle:API:addl }                         
+                                           
+               
+         
+    
+
+
+
+                  
+
+
+
+
+    
+          
+                                                 
+                                  
+                              
+                                                                                                         
+                                                                       
+                                   
+  
+            
+        
+                                                                   
+                     
+                     
+             
+                 
+     
+         
+     

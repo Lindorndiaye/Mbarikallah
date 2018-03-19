@@ -1,0 +1,188 @@
+<html>
+
+<head>
+<title>Mbarrikallah-immo</title>
+<meta charset="UTF-8" />
+  <meta name="viewport" content="{{asset('width=device-width, initial-scale=1.0')}}"/>
+
+ 	<link rel="stylesheet" href="{{asset('assets/bootstrap/css/bootstrap.css')}}" />
+ 
+  	<link rel="stylesheet" href="{{asset('assets/slitslider/css/style.css')}}" />
+  
+<link rel="stylesheet" href="{{asset('assets/slitslider/css/custom.css')}}" />
+<link rel="stylesheet" href="{{asset('assets/style.css')}}"/>
+  <script src="{{asset('http://code.jquery.com/jquery-1.9.1.min.js')}}"></script>
+	<script src="{{asset('assets/bootstrap/js/bootstrap.js')}}"></script>
+  <script src="{{asset('assets/script.js')}}"></script>
+
+
+
+<!-- Owl stylesheet -->
+<link rel="stylesheet" href="{{asset('assets/owl-carousel/owl.carousel.css')}}">
+<link rel="stylesheet" href="{{asset('assets/owl-carousel/owl.theme.css')}}">
+<script src="{{asset('assets/owl-carousel/owl.carousel.js')}}"></script>
+<!-- Owl stylesheet -->
+
+
+<!-- slitslider -->
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/slitslider/css/style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/slitslider/css/custom.css')}}" />
+    <script type="text/javascript" src="{{asset('assets/slitslider/js/modernizr.custom.79639.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/slitslider/js/jquery.ba-cond.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('assets/slitslider/js/jquery.slitslider.js')}}"></script>
+<!-- slitslider -->
+
+</head>
+    <style>
+      /* On commence par définir les propriétés de la page : les marges en haut
+       * et en bas permettront d'insérer un en-tête et un pied de page */
+      @page {
+        margin: 50px 0 25px 0;
+      }
+      img{
+        width:100px;
+        margin-top:5px;
+        margin-left:-90px;
+      }
+      #ct{
+        margin-left:60px;
+      }
+      /* La position fixed permet de placer les éléments sur toutes les pages
+       * du document pdf, le reste n'est que décoration */
+      #header, #footer {
+        position: fixed; 
+        left: 0px;
+        right: 0px;
+        color: white;
+        background-color: #000;
+      }
+      #header {
+        top: -50px;
+        height: 50px;
+        text-align:center;
+      }
+      #footer {
+        bottom: -25px;
+        height: 25px;
+      }
+      /* Pour améliorer un peu la lisibilité on ajoute une marge au corps de
+       * texte. Ca aurait pu être fait en agrandissant les marges au niveau
+       * de la page mais je trouve qu'utiliser un div dédié pour le contenu
+       * est cohérent */
+      #content { 
+        margin: 25px;
+      }
+      /* On teste quelques d'options css différentes */
+      h1 { text-transform: uppercase; text-align: center; font-weight: bold}
+      h2 {font-style: italic; font-weight: bold; border: solid 1px #ccc; }
+      /* On met même en place un système de colonnes pour tester les float */
+      .col-25, .col-75 { float: left; }
+      .col-25 { width: 25%; }
+      .col-75 { width: 75%; }
+      .row { clear: both; }
+    </style>
+  </head>
+  <body>
+    <!-- On commence par ajouter le header et le footer pour qu'ils soient 
+      visibles sur toutes les pages. Si on les ajoute après avoir rempli plus
+      d'une page, ils ne seront insérés qu'après le saut de page -->
+    <div id="header">
+      <!-- Grâce aux options définies dans le contrôleur on peut insérer des 
+        images à partir de leur url absolue -->
+             <img src="images/imageedit__5471324689.png" alt="Realestate">
+
+      CONTRAT DE LOCATION
+    </div>
+    <div id="footer"></div>
+    <!-- Maintenant on rempli le document -->        
+    <div id="content">
+    <p>
+      Entre les soussignés :</p>
+
+<p>
+<p>
+L'agence Mbarrikallah-immo, propriétaire du
+ci-après dénommé(e) "Le Bailleur"</p>
+
+et
+<p>
+M. ou Mme {{client}} demeurant (adresse) 
+ci-après dénommé(e)(s) "Le Locataire"</p>
+
+<p>IL A ETE CONVENU ET ARRETE CE QUI SUIT :</p>
+<p>
+Le Bailleur donne en location les locaux et équipements ci-après désignés au Locataire qui les accepte :
+- Les locaux et équipements privatifs suivants :  {{bien}}
+
+situé (e) à l'adresse suivante :  {{localite}} 
+ainsi que, le cas échéant, les équipements désignés sur une liste annexée aux présentes.
+
+</p>1. Durée du contrat
+Le présent contrat est conclu pour une durée de un an. Il prendra effet à compter du
+Le présent bail se renouvellera cependant par tacite reconduction par période de {{date}} faute de préavis contraire donné par l'une des parties à l'autre sous forme de lettre recommandée trois mois avant l'expiration de la période en cours.
+</p>
+<p>
+2. Résiliation 
+Il pourra être résilié par lettre recommandée avec avis de réception ou par acte d'huissier :
+-par Le Locataire, à tout moment, sous réserve de prévenir Le Bailleur trois mois à l'avance. 
+-par Le Bailleur, au terme du contrat, en cas de motif sérieux et légitime résultant notamment de l'inexécution par Le Locataire de l'une des obligations lui incombant.
+</p>
+<p>
+3. Destination des lieux
+Les lieux loués, objet du présent contrat, sont destinés à l'usage exclusif d'habitation. Le Locataire ne peut, en conséquence, y exercer une quelconque profession qu'elle soit artisanale, commerciale ou libérale, sauf à solliciter et à obtenir l'autorisation expresse et écrite du Bailleur.
+</p>
+<p>
+4. Montant de la location
+La présente location est consentie et acceptée moyennant paiement d'un loyer mensuel librement fixé entre les parties.
+Le montant de la présente location s'établit comme suit :
+
+TOTAL MENSUEL			{{mensuel}} dirhams		
+La somme, ci-dessus mentionnée, sera payable au plus tard le ... de chaque mois.
+Le présent loyer pourra être révisé à la demande de l'une ou l'autre des parties tous les 1ans.
+Dans le cas où le présent loyer sera réglementé par des textes législatifs, les variations prévues par ces textes seront applicables de plein droit.
+</p>
+<p>
+5. Dépôt de garantie
+Aux fins de garantir la bonne exécution de ses obligations, Le Locataire versera un dépôt de garantie. Le locataire verse ainsi ce jour au Bailleur, qui le reconnaît et lui en donne quittance, la somme de  {{caution}}.
+Le dépôt ainsi versé sera restitué au Locataire le jour de la restitution des clés, déduction faite, le cas échéant, des sommes restant dues au Bailleur.
+</p>
+<p>
+7. Obligations du Bailleur
+Le Bailleur est tenu des obligations principales suivantes :
+. délivrer au Locataire les lieux loués en bon état d'usage et de réparations, ainsi que les équipements existants en bon état de fonctionnement ;
+. assurer au Locataire la jouissance paisible des lieux loués et de le garantir des vices ou défauts de nature à y faire obstacle ;
+. entretenir les locaux en état de servir à l'usage prévu par le présent contrat et y faire toutes les réparations, autres que locatives, nécessaires au maintien en état et à l'entretien normal des lieux loués ;
+. ne pas s'opposer aux aménagements réalisés par Le Locataire, sous réserve qu'ils ne constituent pas une transformation de la chose louée.
+</p>
+<p>
+8. Obligations du Locataire
+Le Locataire est tenu des obligations principales suivantes :
+. payer le loyer et toute autre somme due aux termes convenus ;
+. user paisiblement des lieux loués suivant la destination qui leur a été donnée par le présent contrat ;
+. répondre des dégradations et pertes qui surviendraient pendant la durée du contrat dans les lieux loués dont il a la jouissance exclusive, à moins qu'il ne prouve qu'elles ont eu lieu par cas de faute majeure, par la faute du Bailleur ou par le fait d'un tiers qu'il n'a pas introduit dans les lieux loués ;
+. prendre à sa charge l'entretien courant des lieux loués ;
+. ne pas transformer les lieux loués sans l'accord écrit du Bailleur ; à défaut d'accord, Le Bailleur pourra exiger du Locataire, lors de son départ, la remise en état des lieux loués ou conserver à son bénéfice les transformations effectuées sans que le locataire puisse réclamer une quelconque indemnité ; Le Bailleur pourra toutefois exiger la remise immédiate des lieux en l'état, aux frais du Locataire, lorsque les transformations effectuées mettront en péril le bon fonctionnement des équipements ou la sécurité des lieux loués ;
+. Ne pas consentir des sous-locations totales ou partielles. Il est également interdit de céder tout ou partie de ses droits locatifs;
+</p>
+<p>
+9. Election de domicile
+Les parties signataires font élection de domicile : Le Bailleur en son domicile et Le Locataire dans les lieux loués.   
+</p>
+<p> 
+Fait à dakar, le {{date}}
+
+</p>
+ <pre>LE BAILLEUR					                                  LE LOCATAIRE</pre>
+
+
+
+    </div>       
+  </body>
+</html>
+{% block javascript %}
+ <script src="{{asset('assets/script.js')}}"></script>
+  <script src="{{asset('assets/slitslider/js/jquery.slitslider.js')}}"></script>
+  <script src="{{asset('assets/slitslider/js/jquery.ba-cond.min.js')}}"></script>
+  <script src="{{asset('assets/slitslider/js/modernizr.custom.79639.js')}}"></script>
+
+{% endblock %}

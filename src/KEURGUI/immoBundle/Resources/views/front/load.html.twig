@@ -1,0 +1,67 @@
+{% extends "@KEURGUIimmo/admin.html.twig" %}
+{% block panelleft %}
+   {{parent()}}
+{% endblock %}
+{% block content %}
+
+<div id="div"  class="row">
+<div class="col-md-4" > </div>
+<div id="div" class="col-md-8"> </div>
+ </div>
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+{% block javascripts %}
+    {{parent()}}
+<script >
+
+
+  $(document).ready(function(){
+     $('#ajoutBien').hide()
+    $('.bien').on('click',function(){
+   $('#div').load('{{path("formBien")}}')
+   
+   
+   
+
+
+    })
+       $('.localite').on('click',function(){
+   $('#div').load('{{path("formLocalite")}}')
+
+   
+   
+
+
+    })
+  
+
+$('#form').on('submit',function(){
+
+    alert('ok')
+ return false
+     
+})
+   
+
+  })
+
+
+</script>
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.8.0.min.js"></script>
+          
+  {% endblock %}

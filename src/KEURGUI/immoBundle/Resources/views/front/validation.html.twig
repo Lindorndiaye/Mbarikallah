@@ -1,0 +1,255 @@
+<head>
+        <meta charset="utf-8" />
+        <title>Moltran - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="{{asset('assets1/images/favicon_1.ico')}}">
+
+        <!-- Dropzone css -->
+        <link href="{{asset('assets1/plugins/dropzone/dist/dropzone.css')}}" rel="stylesheet" type="text/css">
+        
+        <link href="{{asset('assets1/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/core.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/icons.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/components.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/pages.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/menu.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/responsive.css')}}" rel="stylesheet" type="text/css">
+
+        <script src="{{asset('assets1/js/modernizr.min.js')}}"></script>
+                <script src="{{asset('assets1/plugins/dropzone/dist/dropzone.js')}}"></script>
+
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+
+        <!-- Dropzone css -->
+        
+
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+                     
+                    
+                        <!-- end row -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <form action="{{path('add')}}" method="POST" class="form-group" role="form"  id="form" enctype="multipart/form-data">
+
+                          
+  <div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-2 col-md-offset-3">
+        <form role="form">
+            
+            <hr>
+<div class="row " style="">
+<div class="col-md-4"><h3>Details du client</h1>
+Numero de piece : {{res.client.numPiece}}<hr></br>
+Nom : {{res.client.nomComplet}}<hr></br>
+Numero de telephone : {{res.client.tel}}<hr></br>
+Adresse : {{res.client.adresse}}<hr></br>
+E-mail : {{res.client.email}}<hr></br>
+ 
+</div>
+
+<div class="col-md-4"><h3>Details sur le Bien</h3>
+Localite : {{res.bien.localite.nom}}<hr></br>
+Type : {{res.bien.type.nom}}<hr></br>
+Nom : {{res.bien.nom}}<hr></br>
+Description : {{res.bien.description}}<hr></br>
+Prix : {{res.bien.prix}}frcfattc<hr></br>
+                 
+
+
+</div>
+
+
+
+
+<div class="row " style="">
+                      
+                         <div class="col-md-7">
+                                            <form class="cmxform form-horizontal tasi-form" id="" method="post" action="" novalidate="novalidate">
+                                              
+                                                    
+                                              <input class="form-control" id="form" name="form" type="hidden" value="contrat"><hr>
+                                             <input class="form-control" id="res" name="res" type="hidden" value="{{res.id}}" value=" {{res.bien.prix}}" readonly><hr>
+
+                                                  
+                                                <div class="form-group">
+                                                    <label for="firstname" class="control-label col-lg-2">Caution *</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="caution" name="caution" type="text"value=" {{res.bien.prix}}" readonly ><hr>
+                                                    </div>
+                                                </div>
+                                            
+                                                   <div class="form-group">
+                                                    <label for="lastname" class="control-label col-lg-2">Mensualite *</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="mensualite" name="mensualite" type="text" value=" {{res.bien.prix}}" readonly><hr>
+                                                    </div>
+                                                </div>
+                                                    <div class="form-group">
+                                                    <label for="lastname" class="control-label col-lg-2">totale *</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="mensualite" name="mensualite" type="text" value=" {{res.bien.prix+res.bien.prix}}" readonly><hr>
+                                                    </div>
+                                                </div>
+                                                    <div class="form-group">
+                                                    <label for="lastname" class="control-label col-lg-2">terme du contrat *</label>
+                                                    <div class="col-lg-10">
+                                                    <p stype="border:1px solid">  Dans le cadre de la sécurisation du paiement par Wari qui est un point de revendication de la CESL, Ecobank a effectivement envoyé des codes de retrait aux étudiants concernés par ce mode de paiement. Les étudiants n'ayant pas recu lesdits codes seront recensés très prochainement.Cependant, La CESL tient à préciser qu'elle ne considère pas le paiement par wari ou wizall comme des modes de paiement durable mais provisoire en attendant la délivrance dans les meilleurs délais des cartes GAB à tous les étudiants boursiers.
+La Coordination des Étudiants de Saint-Louis réitère son engagement et sa disponibilité pour la cause de l'étudiant.
+
+Jeanne GOMIS, Présidente de séance de la CESL.    </p>
+                                                    </div>
+                                                </div>
+         
+         
+                                            <div class="form-group">
+                                                <label for="newsletter" class="control-label col-lg-2 col-sm-3">j'accepte</label>
+                                                <div class="col-lg-10 col-sm-9">
+                                                    <input type="checkbox" style="width: 16px" id="accepte" name="newsletter">
+                                                </div>
+                                            </div>
+                                                
+
+                                                <div class="form-group">
+                                                    <div class="col-lg-offset-2 col-lg-10">
+                                                        <input class="btn btn-success en" type="submit" value="enregistre">
+                                                        <button class="btn btn-default waves-effect" type="button">Cancel</button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                            </div>
+                                                   <div class="col-md-5"></div>
+</div>
+
+
+
+
+</div>
+                            </div>
+                            <!-- end: page -->
+                      
+
+                        </div> <!-- end Panel -->
+                  
+                        
+  
+                        
+        <!-- jQuery  -->
+      <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+
+        <script src="{{asset('assets1/js/jquery.min.js')}}"></script>
+        <script src="{{asset('assets1/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets1/js/detect.js')}}"></script>
+        <script src="{{asset('assets1/js/fastclick.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.slimscroll.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.blockUI.js')}}"></script>
+        <script src="{{asset('assets1/js/waves.js')}}"></script>
+        <script src="{{asset('assets1/js/wow.min.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.nicescroll.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.scrollTo.min.js')}}"></script>
+         <script src="{{asset('assets1/js/jquery.app.js')}}"></script>
+
+        
+
+
+        <!-- Page Specific JS Libraries -->
+       
+
+
+        <!-- Datatables-->
+        <script src="{{asset('assets1/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.bootstrap.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.buttons.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/buttons.bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/jszip.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/pdfmake.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/vfs_fonts.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/buttons.html5.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/buttons.print.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.fixedHeader.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.keyTable.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.responsive.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/responsive.bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.scroller.min.js')}}"></script>
+
+        <!-- Datatable init js -->
+        <script src="{{asset('assets1/pages/datatables.init.js')}}"></script>
+
+        <!-- Page Specific JS Libraries -->
+                <script src="{{asset('assets1/plugins/dropzone/dist/dropzone.js')}}"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+              
+                $(".en").attr("disabled",true)
+
+                  
+            $('#accepte').on('click',function(){
+              
+                if( $(this).is(':checked') ) $(".en").attr("disabled",false);
+                else     $(".en").attr("disabled",true);
+                
+                
+
+               
+             
+              
+                
+            
+            })
+                $('#datatable').dataTable();
+                $('#datatable-keytable').DataTable( { keys: true } );
+                $('#datatable-responsive').DataTable();
+                $('#datatable-scroller').DataTable( { ajax: "assets/plugins/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
+                var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
+            } );
+            TableManageButtons.init();
+         
+        </script>
+
+
+
+<style> 
+#datatable tr input{
+    width:120px;
+    height:200px;
+    background-color:white;
+}
+img{
+    width:60px;
+    
+}
+</style>

@@ -1,0 +1,253 @@
+<head>
+        <meta charset="utf-8" />
+        <title>Moltran - Responsive Admin Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
+        <meta content="Coderthemes" name="author" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <link rel="shortcut icon" href="{{asset('assets1/images/favicon_1.ico')}}">
+
+        <!-- Dropzone css -->
+                 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+        <link href="{{asset('assets1/plugins/dropzone/dist/dropzone.css')}}" rel="stylesheet" type="text/css">
+        
+        <link href="{{asset('assets1/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/core.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/icons.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/components.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/pages.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/menu.css')}}" rel="stylesheet" type="text/css">
+        <link href="{{asset('assets1/css/responsive.css')}}" rel="stylesheet" type="text/css">
+
+        <script src="{{asset('assets1/js/modernizr.min.js')}}"></script>
+                <script src="{{asset('assets1/plugins/dropzone/dist/dropzone.js')}}"></script>
+                                  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+
+        
+    </head>
+
+
+        <!-- Dropzone css -->
+        
+
+        
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+                     
+                    
+                        <!-- end row -->
+
+                            <div class="row">
+                            <div class="col-md-12">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                    </div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <form action="{{path('add')}}" method="POST" class="form-group" role="form"  id="form" enctype="multipart/form-data">
+
+                          
+  <div class="container">
+
+<div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-sm-offset-2 col-md-offset-3">
+        <form role="form">
+            
+            <hr>
+<div class="row " style="">
+<div class="col-md-4"><h3>Details du client</h1>
+Numero de piece : {{res.client.numPiece}}<hr></br>
+Nom : {{res.client.nomComplet}}<hr></br>
+Numero de telephone : {{res.client.tel}}<hr></br>
+Adresse : {{res.client.adresse}}<hr></br>
+E-mail : {{res.client.email}}<hr></br>
+ 
+</div>
+
+<div class="col-md-4"><h3>Details sur le Bien</h3>
+Localite : {{res.bien.localite.nom}}<hr></br>
+Type : {{res.bien.type.nom}}<hr></br>
+Nom : {{res.bien.nom}}<hr></br>
+Description : {{res.bien.description}}<hr></br>
+Prix : {{res.bien.prix}}frcfattc<hr></br>
+image:            
+                                 
+
+
+
+
+
+ <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+                                   <img style=" width:400px;
+    height:200px;"src="{{asset('images/properties/'~res.bien.image[0].image)}}" class="properties" alt="properties" />
+      </div>
+
+    
+    
+         {% for i in res.bien.image %}
+                        
+                                     <div class="item">
+                                   <img style=" width:400px;
+    height:200px;"src="{{asset('images/properties/'~i.image)}}" class="properties" alt="properties" />
+      </div>
+                                  
+                               
+                                   {% endfor %}<br>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
+
+
+
+</div>
+
+
+                                   <a href="{{path('validation',{'id':res.id})}}">valider</a>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</div>
+                            </div>
+                            <!-- end: page -->
+                      
+
+                        </div> <!-- end Panel -->
+                  
+                        
+  
+                        
+        <!-- jQuery  -->
+      <script>
+            var resizefunc = [];
+        </script>
+
+        <!-- jQuery  -->
+
+        <script src="{{asset('assets1/js/jquery.min.js')}}"></script>
+        <script src="{{asset('assets1/js/bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets1/js/detect.js')}}"></script>
+        <script src="{{asset('assets1/js/fastclick.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.slimscroll.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.blockUI.js')}}"></script>
+        <script src="{{asset('assets1/js/waves.js')}}"></script>
+        <script src="{{asset('assets1/js/wow.min.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.nicescroll.js')}}"></script>
+        <script src="{{asset('assets1/js/jquery.scrollTo.min.js')}}"></script>
+         <script src="{{asset('assets1/js/jquery.app.js')}}"></script>
+
+        
+
+
+        <!-- Page Specific JS Libraries -->
+       
+
+
+        <!-- Datatables-->
+        <script src="{{asset('assets1/plugins/datatables/jquery.dataTables.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.bootstrap.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.buttons.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/buttons.bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/jszip.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/pdfmake.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/vfs_fonts.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/buttons.html5.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/buttons.print.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.fixedHeader.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.keyTable.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.responsive.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/responsive.bootstrap.min.js')}}"></script>
+        <script src="{{asset('assets1/plugins/datatables/dataTables.scroller.min.js')}}"></script>
+
+        <!-- Datatable init js -->
+        <script src="{{asset('assets1/pages/datatables.init.js')}}"></script>
+
+        <!-- Page Specific JS Libraries -->
+                <script src="{{asset('assets1/plugins/dropzone/dist/dropzone.js')}}"></script>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+              
+                $(".cache").hide()
+                $("#datatable tr input").attr("disabled",true)
+                  
+            $('.edit').on('click',function(){
+                var x=$(this).attr("name")
+                     var id=$(this).attr("id")
+              
+                    $("."+x+"1").attr("disabled",false)
+                
+
+               
+             
+              
+                
+            
+            })
+                $('#datatable').dataTable();
+                $('#datatable-keytable').DataTable( { keys: true } );
+                $('#datatable-responsive').DataTable();
+                $('#datatable-scroller').DataTable( { ajax: "assets/plugins/datatables/json/scroller-demo.json", deferRender: true, scrollY: 380, scrollCollapse: true, scroller: true } );
+                var table = $('#datatable-fixed-header').DataTable( { fixedHeader: true } );
+            } );
+            TableManageButtons.init();
+         
+        </script>
+
+
+
+<style> 
+#datatable tr input{
+    width:120px;
+    height:200px;
+    background-color:white;
+}
+img{
+
+    
+}
+</style>
